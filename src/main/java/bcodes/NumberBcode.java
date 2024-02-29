@@ -27,7 +27,7 @@ public class NumberBcode implements Bcode {
                 break;
             }
         }
-        Integer result = Integer.parseInt(str.substring(offSet + 1, firstColonIndex));
+        Long result = Long.parseLong(str.substring(offSet + 1, firstColonIndex));
         return new DecodeRes(result, firstColonIndex + 1);
     }
 }
